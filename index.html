@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>App Pomodoro</title>
+  </head>
+  <body>
+    <h1>Pomodoro Timer</h1>
+
+    <div class="clock">
+      <span class="minutes">0</span>
+      <span>:</span>
+      <span class="seconds">00</span>
+      <audio src="./resourses/alarma.mp3"></audio>
+      <svg class="progress-ring" height="150" width="150">
+        <circle
+          class="progress-ring-circle"
+          stroke-width="8"
+          fill="transparent"
+          r="50"
+          cx="60"
+          cy="60"
+        />
+      </svg>
+    </div>
+    <div class="btn-group">
+      <button class="start">Empezar</button>
+      <button class="pause">Pausar</button>
+      <button class="reset">Reiniciar</button>
+    </div>
+    <form action="">
+      <input type="number" name="" id="focusTime" />
+      <input type="number" name="" id="breakTimer" />
+      <button type="submit">Guardar Valores</button>
+    </form>
+
+    <script src="./js/settings.js"></script>
+    <script src="./js/timer.js"></script>
+    <script src="./js/progress.js"></script>
+  </body>
+</html>
